@@ -477,8 +477,8 @@ function Resume() {
     {
       company: 'Camp Swing It',
       title: 'At CheongShim International Youth Centor',
-      start: '2011',
-      end: '2014',
+      start: '5 Apr',
+      end: '7 Apr',
     },
     // {
     //   company: 'Starbucks',
