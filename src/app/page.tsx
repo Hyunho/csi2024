@@ -240,9 +240,9 @@ function Band() {
               <img className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src={person.imageUrl} alt="" />
               <div className="max-w-xl flex-auto">
                 <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">{person.name}</h3>
-                <p className="text-base leading-7 text-gray-600">{person.role}</p>
+                {/* <p className="text-base leading-7 text-gray-600">{person.role}</p> */}
                 <p className="mt-6 text-base leading-7 text-gray-600">{person.bio}</p>
-                <ul role="list" className="mt-6 flex gap-x-6">
+                {/* <ul role="list" className="mt-6 flex gap-x-6">
                   <li>
                     <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-500">
                       <span className="sr-only">Twitter</span>
@@ -263,7 +263,7 @@ function Band() {
                       </svg>
                     </a>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </li>
           ))}
@@ -276,18 +276,19 @@ function Band() {
 
 const tiers = [
   {
-    name: 'Full workshop package',
+    name: 'Full Workshop Package',
     id: 'tier-basic',
     href: '#',
-    price: { monthly: '$15', annually: '$12' },
+    // price: { monthly: '$15', annually: '$12' },
+    price: { dollor: '$15', won: '₩12' },
     description: 'Everything necessary to get started.',
     features: ['5 products', 'Up to 1,000 subscribers', 'Basic analytics', '48-hour support response time'],
   },
   {
-    name: 'Full party package',
+    name: 'Full Party Package',
     id: 'tier-essential',
     href: '#',
-    price: { monthly: '$30', annually: '$24' },
+    price: { dollor: '$15', won: '₩12' },
     description: 'Everything in Basic, plus essential tools for growing your business.',
     features: [
       '25 products',
@@ -334,7 +335,7 @@ function Ticket() {
     <div className="bg-white py-8 sm:py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl sm:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">Pricing</h2>
+          <h2 className="text-2xl font-semibold leading-7 text-indigo-600">Registration</h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Choose the right plan for&nbsp;you
           </p>
@@ -347,14 +348,15 @@ function Ticket() {
           <div className="isolate -mt-16 grid max-w-sm grid-cols-1 gap-y-16 divide-y divide-gray-100 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-2 lg:divide-x lg:divide-y-0 xl:-mx-4">
             {tiers.map((tier) => (
               <div key={tier.id} className="pt-16 lg:px-8 lg:pt-0 xl:px-14">
-                <h3 id={tier.id} className="text-base font-semibold leading-7 text-gray-900">
+                <h3 id={tier.id} className="text-3xl font-semibold leading-7 text-gray-900">
                   {tier.name}
                 </h3>
                 <p className="mt-6 flex items-baseline gap-x-1">
-                  <span className="text-5xl font-bold tracking-tight text-gray-900">{tier.price.monthly}</span>
-                  <span className="text-sm font-semibold leading-6 text-gray-600">/month</span>
+                  <span className="text-2xl font-bold tracking-tight text-gray-900">{tier.price.dollor}</span>
+                  <span className="text-2xl font-bold tracking-tight text-gray-900"> / {tier.price.won}</span>
+                  {/* <span className="text-sm font-semibold leading-6 text-gray-600">/month</span> */}
                 </p>
-                <p className="mt-3 text-sm leading-6 text-gray-500">{tier.price.annually} per month if paid annually</p>
+                {/* <p className="mt-3 text-sm leading-6 text-gray-500">{tier.price.won} per month if paid annually</p> */}
                 <a
                   href={tier.href}
                   aria-describedby={tier.id}
@@ -412,7 +414,7 @@ function Newsletter() {
 interface Role {
   company: string
   title: string
-  logo: ImageProps['src']
+  // logo: ImageProps['src']
   start: string | { label: string; dateTime: string }
   end: string | { label: string; dateTime: string }
 }
@@ -428,9 +430,9 @@ function Role({ role }: { role: Role }) {
 
   return (
     <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+      {/* <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
         <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
-      </div>
+      </div> */}
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
         <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
@@ -456,54 +458,52 @@ function Role({ role }: { role: Role }) {
 
 function Resume() {
   let resume: Array<Role> = [
+    // {
+    //   company: 'Planetaria',
+    //   title: 'CEO',
+    //   logo: logoPlanetaria,
+    //   start: '2019',
+    //   end: {
+    //     label: 'Present',
+    //     dateTime: new Date().getFullYear().toString(),
+    //   },
+    // },
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear().toString(),
-      },
+      company: 'KLHC',
+      title: 'TBD',
+      start: '30 Mar',
+      end: '',
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
-    },
-    {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
+      company: 'Camp Swing It',
+      title: 'At CheongShim International Youth Centor',
       start: '2011',
       end: '2014',
     },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
-    },
+    // {
+    //   company: 'Starbucks',
+    //   title: 'At CheongShim International Youth Centor',
+    //   logo: logoStarbucks,
+    //   start: '2008',
+    //   end: '2011',
+    // },
   ]
 
   return (
-    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+    <div className="rounded-2xl mt-8 border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">Brief schedule</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      {/* <Button href="#" variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button>
+      </Button> */}
     </div>
   )
 }
@@ -547,9 +547,9 @@ export default async function Home() {
             Camp Swing It 2024
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Camp Swing It description<br/>
+            {/* Camp Swing It description<br/> */}
+            5-7 Apr, 30 Mar <br/>
             At CheongShim International Youth Centor<br/>
-
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -577,6 +577,7 @@ export default async function Home() {
       </Container>
       <Photos />
       <Container className="mt-9">
+        <Resume />
         <Instructors />
         <hr/>
         <Band />
@@ -584,8 +585,8 @@ export default async function Home() {
         <Ticket />
       </Container>
       {/* <Photos /> */}
-      <Container className="mt-9">
-      </Container>
+      {/* <Container className="mt-9">
+      </Container> */}
       {/* <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
