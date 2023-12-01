@@ -132,11 +132,11 @@ function MobileNavigation(
             </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/about">About</MobileNavItem>
-                <MobileNavItem href="/articles">Articles</MobileNavItem>
-                <MobileNavItem href="/projects">Projects</MobileNavItem>
-                <MobileNavItem href="/speaking">Speaking</MobileNavItem>
-                <MobileNavItem href="/uses">Uses</MobileNavItem>
+                <MobileNavItem href="/">Workshop</MobileNavItem>
+                <MobileNavItem href="/">Competition</MobileNavItem>
+                <MobileNavItem href="/">Registration</MobileNavItem>
+                <MobileNavItem href="/">Schedule</MobileNavItem>
+                <MobileNavItem href="/">Venues</MobileNavItem>
               </ul>
             </nav>
           </Popover.Panel>
@@ -179,11 +179,16 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/about">About</NavItem>
+        {/* <NavItem href="/about">About</NavItem>
         <NavItem href="/articles">Articles</NavItem>
         <NavItem href="/projects">Projects</NavItem>
         <NavItem href="/speaking">Speaking</NavItem>
-        <NavItem href="/uses">Uses</NavItem>
+        <NavItem href="/uses">Uses</NavItem> */}
+        <NavItem href="/">Workshop</NavItem>
+        <NavItem href="/">Competition</NavItem>
+        <NavItem href="/">Registration</NavItem>
+        <NavItem href="/">Schedule</NavItem>
+        <NavItem href="/">Venues</NavItem>
       </ul>
     </nav>
   )
@@ -437,15 +442,15 @@ export function Header() {
                   </AvatarContainer>
                 )}
               </div>
-              {/* <div className="flex flex-1 justify-end md:justify-center">
+              <div className="flex flex-1 justify-end md:justify-center">
                 <MobileNavigation className="pointer-events-auto md:hidden" />
                 <DesktopNavigation className="pointer-events-auto hidden md:block" />
               </div>
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto">
-                  <ThemeToggle />
+                  {/* <ThemeToggle /> */}
                 </div>
-              </div> */}
+              </div>
             </div>
           </Container>
         </div>
