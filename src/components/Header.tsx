@@ -437,7 +437,7 @@ export function Header() {
                   </AvatarContainer>
                 )}
               </div>
-              <div className="flex flex-1 justify-end md:justify-center">
+              {/* <div className="flex flex-1 justify-end md:justify-center">
                 <MobileNavigation className="pointer-events-auto md:hidden" />
                 <DesktopNavigation className="pointer-events-auto hidden md:block" />
               </div>
@@ -445,7 +445,7 @@ export function Header() {
                 <div className="pointer-events-auto">
                   <ThemeToggle />
                 </div>
-              </div>
+              </div> */}
             </div>
           </Container>
         </div>
