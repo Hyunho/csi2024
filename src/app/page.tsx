@@ -16,11 +16,11 @@ import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import image1 from '@/images/photos/main_01.png'
+import image2 from '@/images/photos/main_02.png'
+import image3 from '@/images/photos/main_03.png'
+import image4 from '@/images/photos/main_04.png'
+import image5 from '@/images/photos/main_05.png'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
@@ -114,52 +114,54 @@ function SocialLink({
 
 const instructor_people= [
   {
-    name: '피터 로긴스 & 까짜',
+    name: 'Katja and Peter',
+    // name: 'Peter Loggins & Katja Završnik',
     role: 'Senior Designer',
     imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      '/images/2024/Peter&Katja.png'
+      // 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
   },
   {
-    name: '마티아스 & 하나',
+    name: 'Hanna and Mattias',
     role: 'Senior Designer',
     imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      '/images/2024/Hanna&Mattias.png'
   },
   {
-    name: '후안 & 사론',
+    name: 'Sharon and Juan',
     role: 'Senior Designer',
     imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      '/images/2024/Sharon&Juan.png'
 
   },
   {
-    name: '덱스(확정) & 애니(미정)',
+    name: 'Dax & ?',
     role: 'Senior Designer',
     imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      '/images/2024/dax&shadow.png'
 
   },
-  {
-    name: '덱스(확정) & 애니(미정)',
-    role: 'Senior Designer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+  // {
+  //   name: '덱스(확정) & 애니(미정)',
+  //   role: 'Senior Designer',
+  //   imageUrl:
+  //     'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
 
-  },
-  {
-    name: '덱스(확정) & 애니(미정)',
-    role: 'Senior Designer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+  // },
+  // {
+  //   name: '덱스(확정) & 애니(미정)',
+  //   role: 'Senior Designer',
+  //   imageUrl:
+  //     'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
 
-  },
-  {
-    name: '덱스(확정) & 애니(미정)',
-    description: "덱스(확정) & 애니(미정)sdfasdfasdfasddfasdfasdfasdfad dummy",
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+  // },
+  // {
+  //   name: '덱스(확정) & 애니(미정)',
+  //   description: "덱스(확정) & 애니(미정)sdfasdfasdfasddfasdfasdfasdfad dummy",
+  //   imageUrl:
+  //     'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
 
-  },
+  // },
   // More people...
 ]
 
@@ -196,7 +198,7 @@ const people = [
     name: '셔츠테일 스톰퍼스 풀밴드',
     role: 'Co-Founder / CEO',
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      '/images/2024/band_03.png',
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
     twitterUrl: '#',
     linkedinUrl: '#',
@@ -205,7 +207,7 @@ const people = [
     name: '아다마스 밴드',
     role: 'Co-Founder / CEO',
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      '/images/2024/band_01.png',
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
     twitterUrl: '#',
     linkedinUrl: '#',
@@ -214,7 +216,7 @@ const people = [
     name: '브라더 유셉',
     role: 'Co-Founder / CEO',
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      '/images/2024/band_02.png',
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
     twitterUrl: '#',
     linkedinUrl: '#',
