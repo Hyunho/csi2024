@@ -179,7 +179,7 @@ function Instructors() {
         >
           {instructor_people.map((person) => (
             <li key={person.name}>
-              <img className="mx-auto h-36 w-36 rounded-full" src={person.imageUrl} alt="" />
+              <img className="mx-auto h-42 w-42 rounded-full" src={person.imageUrl} alt="" />
               <h3 className="mt-6 text-xl font-semibold Gleading-7 tracking-tight text-gray-900">{person.name}</h3>
               {/* <p className="text-sm leading-6 text-gray-600">{person.description}</p> */}
             </li>
