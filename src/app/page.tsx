@@ -184,7 +184,7 @@ function Instructors() {
             <li key={person.name}>
               <img className="mx-auto h-36 w-36 rounded-full" src={person.imageUrl} alt="" />
               <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-              <p className="text-sm leading-6 text-gray-600">{person.description}</p>
+              {/* <p className="text-sm leading-6 text-gray-600">{person.description}</p> */}
             </li>
           ))}
         </ul>
