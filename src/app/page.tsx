@@ -135,7 +135,7 @@ const instructor_people= [
 
   },
   {
-    name: 'Dax & ?',
+    name: 'coming soon',
     role: 'Senior Designer',
     imageUrl:
       '/images/2024/dax&shadow.png'
@@ -201,7 +201,7 @@ const people = [
     linkedinUrl: '#',
   },
   {
-    name: 'ADAMAS KIM and the RHYTHM SHUFFLERS',
+    name: 'Adamas kim and the Rhythm shufflers',
     role: 'Co-Founder / CEO',
     imageUrl:
       '/images/2024/band_01.png',
