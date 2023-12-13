@@ -171,10 +171,7 @@ function Instructors() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Instructors</h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
-            best results for our clients.
-          </p>
+            The 2024 artists line up of Camp Swing It is as follows.
         </div>
         <ul
           role="list"
@@ -183,7 +180,7 @@ function Instructors() {
           {instructor_people.map((person) => (
             <li key={person.name}>
               <img className="mx-auto h-36 w-36 rounded-full" src={person.imageUrl} alt="" />
-              <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
+              <h3 className="mt-6 text-xl font-semibold Gleading-7 tracking-tight text-gray-900">{person.name}</h3>
               {/* <p className="text-sm leading-6 text-gray-600">{person.description}</p> */}
             </li>
           ))}
@@ -195,29 +192,29 @@ function Instructors() {
 
 const people = [
   {
-    name: '셔츠테일 스톰퍼스 풀밴드',
+    name: 'Shirt Tail Stompers - Full Band',
     role: 'Co-Founder / CEO',
     imageUrl:
       '/images/2024/band_03.png',
-    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+    bio: 'London\'s top vintage band, the Shirt Tail Stompers are firmly established at home and internationally playing Harlem Swing and the Hot Jazz of the 1920s, 30s and 40s. Featuring music from composers such as Duke Ellington, Benny Goodman and Count Basie.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
-    name: '아다마스 밴드',
+    name: 'ADAMAS KIM and the RHYTHM SHUFFLERS',
     role: 'Co-Founder / CEO',
     imageUrl:
       '/images/2024/band_01.png',
-    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+    bio: 'This is a band specializing in vintage dance music like early jazz, swing, and boogie-woogie, known for their 9-10 member lineup. They focus on enjoying dance and music together, gaining fame in the swing dance scene since their 2019 debut, and work to popularize vintage jazz culture.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
-    name: '브라더 유셉',
+    name: 'Brother Yusef',
     role: 'Co-Founder / CEO',
     imageUrl:
       '/images/2024/band_02.png',
-    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+    bio: 'Brother Yusef is a self-taught musician and has been described as a master solo guitarist and a uniquely passionate vocalist. His performances are raw, honest, and as real as the genre has ever aspired to be.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -231,9 +228,7 @@ function Band() {
         <div className="max-w-2xl xl:col-span-2">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About the band</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            {/* We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
-            best results for our clients. */}
-            + 콜라보로 20인조 빅밴드 
+          "Experience the ultimate jazz fusion with the Shirt Tail Stompers and ADAMAS KIM and the RHYTHM SHUFFLERS! A blend of Harlem Swing and early jazz for a night of exhilarating rhythms."
           </p>
         </div>
         <ul role="list" className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
@@ -284,7 +279,10 @@ const tiers = [
     // price: { monthly: '$15', annually: '$12' },
     price: { dollor: '$15', won: '₩12' },
     description: 'Everything necessary to get started.',
-    features: ['5 products', 'Up to 1,000 subscribers', 'Basic analytics', '48-hour support response time'],
+    features: [
+      'Accommodation included', 
+      'Basic 2 nights. 1 night optional',
+    ],
   },
   {
     name: 'Full Party Package',
@@ -293,11 +291,31 @@ const tiers = [
     price: { dollor: '$15', won: '₩12' },
     description: 'Everything in Basic, plus essential tools for growing your business.',
     features: [
-      '25 products',
-      'Up to 10,000 subscribers',
-      'Advanced analytics',
-      '24-hour support response time',
-      'Marketing automations',
+      'Accommodation included', 
+      'Basic 2 nights. 1 night optional',
+    ],
+  },
+  {
+    name: 'Day Pass Package',
+    id: 'tier-essential',
+    href: '#',
+    price: { dollor: '$15', won: '₩12' },
+    description: 'Everything in Basic, plus essential tools for growing your business.',
+    features: [
+      'Accommodation not included', 
+      'Friday, Saturday, Sunday each', 
+    ],
+  },
+  {
+    name: 'Kids Package',
+    id: 'tier-essential',
+    href: '#',
+    price: { dollor: '$15', won: '₩12' },
+    description: 'Everything in Basic, plus essential tools for growing your business.',
+    features: [
+      'Saturday accommodation included, Sunday optional',
+      'Saturday kids\' lessons',
+      '2 adults + 1 kid',
     ],
   },
   // {
@@ -339,13 +357,13 @@ function Ticket() {
         <div className="mx-auto max-w-4xl sm:text-center">
           <h2 className="text-2xl font-semibold leading-7 text-indigo-600">Registration</h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Choose the right plan for&nbsp;you
+            Choose the right ticket for&nbsp;you
           </p>
         </div>
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 sm:text-center">
+        {/* <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 sm:text-center">
           Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in.
           Explicabo id ut laborum.
-        </p>
+        </p> */}
         <div className="mt-20 flow-root">
           <div className="isolate -mt-16 grid max-w-sm grid-cols-1 gap-y-16 divide-y divide-gray-100 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-2 lg:divide-x lg:divide-y-0 xl:-mx-4">
             {tiers.map((tier) => (
@@ -364,7 +382,7 @@ function Ticket() {
                   aria-describedby={tier.id}
                   className="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Buy plan
+                  Buy ticket
                 </a>
                 <p className="mt-10 text-sm font-semibold leading-6 text-gray-900">{tier.description}</p>
                 <ul role="list" className="mt-6 space-y-3 text-sm leading-6 text-gray-600">
