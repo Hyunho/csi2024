@@ -137,7 +137,7 @@ function MobileNavigation(
                 <MobileNavItem href="/">Competition</MobileNavItem>
                 <MobileNavItem href="/registration">Registration</MobileNavItem>
                 <MobileNavItem href="/">Schedule</MobileNavItem>
-                <MobileNavItem href="/">Venues</MobileNavItem>
+                <MobileNavItem href="/venues">Venues</MobileNavItem>
               </ul>
             </nav>
           </Popover.Panel>
@@ -186,10 +186,10 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
         <NavItem href="/speaking">Speaking</NavItem>
         <NavItem href="/uses">Uses</NavItem> */}
         <NavItem href="/">Workshop</NavItem>
-        <NavItem href="/">Competition</NavItem>
+        <NavItem href="/klhc">KLHC</NavItem>
         <NavItem href="/registration">Registration</NavItem>
         <NavItem href="/">Schedule</NavItem>
-        <NavItem href="/">Venues</NavItem>
+        <NavItem href="/venues">Venues</NavItem>
       </ul>
     </nav>
   )
@@ -444,8 +444,8 @@ export function Header() {
                 )}
               </div>
               <div className="flex flex-1 justify-end md:justify-center">
-                {/* <MobileNavigation className="pointer-events-auto md:hidden" />
-                <DesktopNavigation className="pointer-events-auto hidden md:block" /> */}
+                <MobileNavigation className="pointer-events-auto md:hidden" />
+                <DesktopNavigation className="pointer-events-auto hidden md:block" />
               </div>
               <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto">
