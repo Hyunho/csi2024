@@ -46,7 +46,6 @@ export default function Uses() {
       intro="Korean Lindy Hop Championships (KLHC) is Korea’s largest international competition where the best lindyhoppers for each division are selected. We sincerely hope that KLHC does not stop at just being a place to win simple results; we want it to be a stage of challenge and opportunity. Be there, compete, test your limits."
     >
       <div className="space-y-20">
-        <h1>Divisions</h1>
         <ToolsSection title="Routine Divisions">
           <Tool title="The Lindy Hop World Cup Showcase (couples division)">
             <p>
