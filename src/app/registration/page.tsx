@@ -76,53 +76,8 @@ export default function Uses() {
         </ToolsSection>
         <ToolsSection title="Competitions">
           <Tool title="Mix & Match Divisions">
-            <ul className='list-disc'>
-              <li> Rookie (Under 2 years experience)</li>
-              <li> Open</li>
-              <li> Advanced</li>
-              <li> All Star
-                <h4 className='font-bold'>
-                  * Qualifications (winner refers to 1st, 2nd and/or 3rd places)
-                </h4>
-                <ol className='ml-3 list-decimal'>
-                  <li>
-                    Winners at KLHC Advanced M&M
-                  </li>
-                  <li>
-                    Winners at Summer Swing Dance Championships @ Busan Swing Festival Advanced M&M
-                  </li>
-                  <li>
-                    Finalists at The Battle Korea Advanced M&M (1st or 2nd), winners at All-star M&M (quarter finalists)
-                  </li>
-                  <li>
-                    Otherwise deemed qualified by KLHC organizers
-                  </li>
-                </ol>
-              </li>
-            </ul>
           </Tool>
           <Tool title="Strictly Lindy">
-            <ul className='list-disc'>
-              <li> Open</li>
-              <li> Advanced</li>
-              <li> All Star
-                <h4 className='font-bold'> * Qualifications</h4>
-                <ol className='ml-3 list-decimal'>
-                  <li>
-                    Winners at KLHC Showcase, Classic and Advanced Strictly divisions
-                  </li>
-                  <li>
-                    Winners at Korea Open Swing Championships hosted by Kukmin University – Showcase
-                  </li>
-                  <li>
-                    Finalists at The Battle Korea Advanced Strictly (1st or 2nd), winners at All-star Strictly (quarter finalists)
-                  </li>
-                  <li>
-                    Otherwise deemed qualified by KLHC organizers
-                  </li>
-                </ol>
-              </li>
-            </ul>
           </Tool>
           <Tool title="Solo Jazz">
           </Tool>
