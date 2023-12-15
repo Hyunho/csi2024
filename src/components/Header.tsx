@@ -133,10 +133,11 @@ function MobileNavigation(
             </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/">Workshop</MobileNavItem>
-                <MobileNavItem href="/">Competition</MobileNavItem>
-                <MobileNavItem href="/registration">Registration</MobileNavItem>
-                <MobileNavItem href="/">Schedule</MobileNavItem>
+                {/* <MobileNavItem href="/">Workshop</MobileNavItem> */}
+                <MobileNavItem href="/">Home</MobileNavItem>
+                <MobileNavItem href="/klhc">KLHC</MobileNavItem>
+                {/* <MobileNavItem href="/registration">Registration</MobileNavItem> */}
+                {/* <MobileNavItem href="/">Schedule</MobileNavItem> */}
                 <MobileNavItem href="/venues">Venues</MobileNavItem>
               </ul>
             </nav>
@@ -185,10 +186,11 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
         <NavItem href="/projects">Projects</NavItem>
         <NavItem href="/speaking">Speaking</NavItem>
         <NavItem href="/uses">Uses</NavItem> */}
-        <NavItem href="/">Workshop</NavItem>
+        {/* <NavItem href="/">Workshop</NavItem> */}
+        <NavItem href="/">Home</NavItem>
         <NavItem href="/klhc">KLHC</NavItem>
-        <NavItem href="/registration">Registration</NavItem>
-        <NavItem href="/">Schedule</NavItem>
+        {/* <NavItem href="/registration">Registration</NavItem> */}
+        {/* <NavItem href="/">Schedule</NavItem> */}
         <NavItem href="/venues">Venues</NavItem>
       </ul>
     </nav>
