@@ -574,7 +574,7 @@ export default async function Home() {
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             {/* Camp Swing It description<br/> */}
-            5-7 Apr, 30 Mar <br/>
+            5-7 Apr<br/>
             At CheongShim International Youth Centor<br/>
           </p>
           <div className="mt-6 flex gap-6">
