@@ -59,43 +59,47 @@ export default function About() {
     <Container className="mt-20 sm:mt-32">
       <div>
         <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          CheongShim International <br/>Youth Centor
-          <br/>
+          CheongShim International <br />Youth Centor
+          <br />
           (청심국제청소년수련원)
         </h1>
       </div>
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="lg:pl-5">
           <div className="max-w-xs px-2.5 lg:max-w-none">
-            {/* <Image
-              src={portraitImage}
-              alt=""
-              sizes="(min-width: 1024px) 32rem, 20rem"
-              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-            /> */}
-           <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.620547491171!2d127.51905837570938!3d37.681623072009025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356324cb17e84819%3A0x9067ccf18012fe18!2z7LKt7Ius7LKt7IaM64WE7IiY66Co7JuQ!5e0!3m2!1sko!2skr!4v1702472266007!5m2!1sko!2skr" 
-              // className="w-full h-96 md:w-3/4 md:h-auto mx-auto border-0 rounded-lg shadow-lg"
-              className="w-full h-320 md:w-3/4 md:h-auto mx-auto border-0 rounded-lg shadow-lg"
-              // allowFullScreen="" 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade">
-            </iframe>
+            <div className='mt-5'>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.620547491171!2d127.51905837570938!3d37.681623072009025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356324cb17e84819%3A0x9067ccf18012fe18!2z7LKt7Ius7LKt7IaM64WE7IiY66Co7JuQ!5e0!3m2!1sko!2skr!4v1702472266007!5m2!1sko!2skr"
+                  width="500"
+                  height="400"
+                  allowFullScreen
+                  loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+          </div>
+          <div className="mt-5 lg:pl-5">
+            <div>
+              <p>
+              경기도 가평군 설악면 미사리로 278-64 (경기도 가평군 설악면 송산리 595번지)
+              </p>
+            </div>
+            <div className='mt-5'>
+              <ul role="list">
+                <li>
+                  - <Link href='https://youth.ciyc.co.kr' className='underline'>Link to website</Link>
+                </li>
+                <li>
+                  - <Link href='https://maps.app.goo.gl/ZeGDh1xFxvwh3FHy8' className='underline'>Link to google maps</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div className="lg:order-first lg:row-span-2">
-          {/* <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I’m Spencer Sharp. I live in New York City, where I design the
-            future.
-          </h1> */}
+        {/* <div className="lg:order-first lg:row-span-2">
           <div>
           </div>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+            경기도 가평군 설악면 미사리로 278-64 (경기도 가평군 설악면 송산리 595번지)
             </p>
             <p>
               The only thing I loved more than computers as a kid was space.
@@ -118,17 +122,7 @@ export default function About() {
               it to orbit — from the comfort of their own backyards.
             </p>
           </div>
-        </div>
-        <div className="lg:pl-20">
-          <ul role="list">
-            <li>
-              - <Link href='https://youth.ciyc.co.kr' className='underline'>Link to website</Link>
-            </li>
-            <li>
-              - <Link href='https://maps.app.goo.gl/ZeGDh1xFxvwh3FHy8' className='underline'>Link to google maps</Link>
-            </li>
-          </ul>
-        </div>
+        </div> */}
       </div>
     </Container>
   )
