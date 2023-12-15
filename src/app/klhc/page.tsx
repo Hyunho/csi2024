@@ -73,51 +73,50 @@ export default function Uses() {
           </Tool>
         </ToolsSection>
         <ToolsSection title="Improvisation Divisions">
-          <Tool title="Mix & Match">
-            <ul>
-              <li>Rookie (Under 2 years experience)</li>
-              <li>Open</li>
-              <li>Advanced</li>
-              <li>All Star
+          <Tool title="Mix & Match Divisions">
+            <ul className='list-disc'>
+              <li> Rookie (Under 2 years experience)</li>
+              <li> Open</li>
+              <li> Advanced</li>
+              <li> All Star
+                <h4 className='font-bold'>
                   * Qualifications (winner refers to 1st, 2nd and/or 3rd places)
-                <ol>
+                </h4>
+                <ol className='ml-3 list-decimal'>
                   <li>
-                  1) Winners at KLHC Advanced M&M
+                    Winners at KLHC Advanced M&M
                   </li>
                   <li>
-2) Winners at Summer Swing Dance Championships @ Busan Swing Festival Advanced M&M
+                    Winners at Summer Swing Dance Championships @ Busan Swing Festival Advanced M&M
                   </li>
                   <li>
-3) Finalists at The Battle Korea Advanced M&M (1st or 2nd), winners at All-star M&M (quarter finalists)
+                    Finalists at The Battle Korea Advanced M&M (1st or 2nd), winners at All-star M&M (quarter finalists)
                   </li>
                   <li>
-4) Otherwise deemed qualified by KLHC organizers 
+                    Otherwise deemed qualified by KLHC organizers
                   </li>
-
                 </ol>
-
               </li>
             </ul>
           </Tool>
           <Tool title="Strictly Lindy">
-            <ul>
-              <li>Open</li>
-              <li>Advanced</li>
-              <li>
-                All Star
-                * Qualifications
-                <ol>
+            <ul className='list-disc'>
+              <li> Open</li>
+              <li> Advanced</li>
+              <li> All Star
+                <h4 className='font-bold'> * Qualifications</h4>
+                <ol className='ml-3 list-decimal'>
                   <li>
-                    1) Winners at KLHC Showcase, Classic and Advanced Strictly divisions
+                    Winners at KLHC Showcase, Classic and Advanced Strictly divisions
                   </li>
                   <li>
-                    2) Winners at Korea Open Swing Championships hosted by Kukmin University – Showcase
+                    Winners at Korea Open Swing Championships hosted by Kukmin University – Showcase
                   </li>
                   <li>
-                    3) Finalists at The Battle Korea Advanced Strictly (1st or 2nd), winners at All-star Strictly (quarter finalists)
+                    Finalists at The Battle Korea Advanced Strictly (1st or 2nd), winners at All-star Strictly (quarter finalists)
                   </li>
                   <li>
-                    4) Otherwise deemed qualified by KLHC organizers
+                    Otherwise deemed qualified by KLHC organizers
                   </li>
                 </ol>
               </li>
