@@ -576,6 +576,7 @@ export default async function Home() {
             {/* Camp Swing It description<br/> */}
             5-7 Apr<br/>
             At CheongShim International Youth Centor<br/>
+            (청심국제청소년수련원)
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

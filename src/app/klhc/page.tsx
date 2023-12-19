@@ -74,7 +74,7 @@ export default function Uses() {
         </ToolsSection>
         <ToolsSection title="Improvisation Divisions">
           <Tool title="Mix & Match Divisions">
-            <ul className='list-disc'>
+            <ul className='list-disc ml-5'>
               <li> Rookie (Under 2 years experience)</li>
               <li> Open</li>
               <li> Advanced</li>
@@ -100,7 +100,7 @@ export default function Uses() {
             </ul>
           </Tool>
           <Tool title="Strictly Lindy">
-            <ul className='list-disc'>
+            <ul className='list-disc ml-5'>
               <li> Open</li>
               <li> Advanced</li>
               <li> All Star
