@@ -228,7 +228,10 @@ function Band() {
         <div className="max-w-2xl xl:col-span-2">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About the band</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-          Experience the ultimate jazz fusion with the Shirt Tail Stompers and ADAMAS KIM and the RHYTHM SHUFFLERS! A blend of Harlem Swing and early jazz for a night of exhilarating rhythms.
+            Experience the ultimate jazz fusion with the Shirt Tail Stompers and Adamas kim and the Rhythm shufflers! A blend of Harlem Swing and early jazz for a night of exhilarating rhythms.
+          </p>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Shirt Tail Stompers와 Adamas kim and the Rhythm shufflers와 함께하는 최고의 재즈 퓨전을 경험하세요! 할렘 스윙과 초기 재즈의 조화로 밤새도록 짜릿한 리듬을 즐길 수 있습니다.
           </p>
         </div>
         <ul role="list" className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
@@ -238,7 +241,7 @@ function Band() {
               <div className="max-w-xl flex-auto">
                 <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">{person.name}</h3>
                 {/* <p className="text-base leading-7 text-gray-600">{person.role}</p> */}
-                <p className="mt-6 text-base leading-7 text-gray-600">{person.bio}</p>
+                {/* <p className="mt-6 text-base leading-7 text-gray-600">{person.bio}</p> */}
                 {/* <ul role="list" className="mt-6 flex gap-x-6">
                   <li>
                     <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-500">
@@ -295,17 +298,17 @@ const tiers = [
       'Basic 2 nights. 1 night optional',
     ],
   },
-  {
-    name: 'Day Pass Package',
-    id: 'tier-essential',
-    href: '#',
-    price: { dollor: '$15', won: '₩12' },
-    description: 'Everything in Basic, plus essential tools for growing your business.',
-    features: [
-      'Accommodation not included', 
-      'Friday, Saturday, Sunday each', 
-    ],
-  },
+  // {
+  //   name: 'Day Pass Package',
+  //   id: 'tier-essential',
+  //   href: '#',
+  //   price: { dollor: '$15', won: '₩12' },
+  //   description: 'Everything in Basic, plus essential tools for growing your business.',
+  //   features: [
+  //     'Accommodation not included', 
+  //     'Friday, Saturday, Sunday each', 
+  //   ],
+  // },
   {
     name: 'Kids Package',
     id: 'tier-essential',
@@ -377,13 +380,13 @@ function Ticket() {
                   {/* <span className="text-sm font-semibold leading-6 text-gray-600">/month</span> */}
                 </p>
                 {/* <p className="mt-3 text-sm leading-6 text-gray-500">{tier.price.won} per month if paid annually</p> */}
-                <a
+                {/* <a
                   href={tier.href}
                   aria-describedby={tier.id}
                   className="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Buy ticket
-                </a>
+                </a> */}
                 <p className="mt-10 text-sm font-semibold leading-6 text-gray-900">{tier.description}</p>
                 <ul role="list" className="mt-6 space-y-3 text-sm leading-6 text-gray-600">
                   {tier.features.map((feature) => (
@@ -502,7 +505,7 @@ function Resume() {
     },
     {
       company: 'Camp Swing It',
-      title: 'At CheongShim International Youth Centor',
+      title: 'At CheongShim International Youth Centor(청심국제청소년수련원)',
       start: '5 Apr',
       end: '7 Apr',
     },
