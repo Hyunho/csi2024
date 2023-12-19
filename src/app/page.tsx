@@ -488,12 +488,12 @@ function Resume() {
     //     dateTime: new Date().getFullYear().toString(),
     //   },
     // },
-    {
-      company: 'Pakage will be open soon',
-      title: 'TBD',
-      start: '?? Dec 2023',
-      end: '',
-    },
+    // {
+    //   company: 'Pakage will be open soon',
+    //   title: 'TBD',
+    //   start: '?? Dec 2023',
+    //   end: '',
+    // },
     {
       company: 'KLHC',
       title: 'TBD',
