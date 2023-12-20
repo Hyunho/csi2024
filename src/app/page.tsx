@@ -135,7 +135,7 @@ const instructor_people= [
 
   },
   {
-    name: 'coming soon',
+    name: 'Coming soon',
     role: 'Senior Designer',
     imageUrl:
       '/images/2024/dax&shadow.png'
