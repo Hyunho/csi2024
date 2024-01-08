@@ -135,7 +135,7 @@ const instructor_people= [
 
   },
   {
-    name: 'Coming soon',
+    // name: 'Coming soon',
     role: 'Senior Designer',
     imageUrl:
       '/images/2024/dax&shadow.png'
@@ -170,7 +170,7 @@ function Instructors() {
     <div className="bg-white py-8 sm:py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Instructors</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Dancers</h2>
             The 2024 artists line up of Camp Swing It is as follows.
         </div>
         <ul
@@ -224,51 +224,47 @@ const people = [
 function Band() {
   return (
   <div className="bg-white py-8 md:py-12">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-5">
-        <div className="max-w-2xl xl:col-span-2">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About the band</h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Experience the ultimate jazz fusion with the Shirt Tail Stompers and Adamas kim and the Rhythm shufflers! A blend of Harlem Swing and early jazz for a night of exhilarating rhythms.
-          </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Shirt Tail Stompers와 Adamas kim and the Rhythm shufflers와 함께하는 최고의 재즈 퓨전을 경험하세요! 할렘 스윙과 초기 재즈의 조화로 밤새도록 짜릿한 리듬을 즐길 수 있습니다.
-          </p>
+      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Musicions</h2>
+      <div>
+        {/* <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Musicions</h2> */}
+        <p className="mt-6 text-lg leading-8 text-gray-600">
+          Experience the ultimate jazz fusion with the Shirt Tail Stompers and Adamas kim and the Rhythm shufflers! A blend of Harlem Swing and early jazz for a night of exhilarating rhythms.
+        </p>
+        <p className="mt-6 text-lg leading-8 text-gray-600">
+          Shirt Tail Stompers와 Adamas kim and the Rhythm shufflers와 함께하는 최고의 재즈 퓨전을 경험하세요! 할렘 스윙과 초기 재즈의 조화로 밤새도록 짜릿한 리듬을 즐길 수 있습니다.
+        </p>
+      </div>
+      <div className="relative overflow-hidden pt-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <img
+            src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
+            alt="App screenshot"
+            className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
+            width={2432}
+            height={1442}
+          />
+          <div className="relative" aria-hidden="true">
+            <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
+          </div>
         </div>
-        <ul role="list" className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
+      </div>
+      <div>
+        <p>
+        </p>
+      </div>
+
+      <ul
+          role="list"
+          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+        >
           {people.map((person) => (
-            <li key={person.name} className="flex flex-col gap-10 pt-12 sm:flex-row">
-              <img className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src={person.imageUrl} alt="" />
-              <div className="max-w-xl flex-auto">
-                <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">{person.name}</h3>
-                {/* <p className="text-base leading-7 text-gray-600">{person.role}</p> */}
-                {/* <p className="mt-6 text-base leading-7 text-gray-600">{person.bio}</p> */}
-                {/* <ul role="list" className="mt-6 flex gap-x-6">
-                  <li>
-                    <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-500">
-                      <span className="sr-only">Twitter</span>
-                      <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={person.linkedinUrl} className="text-gray-400 hover:text-gray-500">
-                      <span className="sr-only">LinkedIn</span>
-                      <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                        <path
-                          fillRule="evenodd"
-                          d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                </ul> */}
-              </div>
+            <li key={person.name}>
+              <img className="aspect-[3/2] w-full rounded-2xl object-cover" src={person.imageUrl} alt="" />
+              <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{person.name}</h3>
+              <p className="text-base leading-7 text-gray-600">{person.role}</p>
             </li>
           ))}
         </ul>
-      </div>
     </div>
   )
 }
@@ -276,8 +272,8 @@ function Band() {
 
 const tiers = [
   {
-    name: 'Full Workshop Package',
-    id: 'tier-basic',
+    name: 'Party',
+    id: 'tier-party',
     href: '#',
     // price: { monthly: '$15', annually: '$12' },
     price: { dollor: '$15', won: '₩12' },
@@ -288,8 +284,19 @@ const tiers = [
     ],
   },
   {
-    name: 'Full Party Package',
-    id: 'tier-essential',
+    name: 'Accommodation',
+    id: 'tier-accommodation',
+    href: '#',
+    price: { dollor: '$15', won: '₩12' },
+    description: 'Everything in Basic, plus essential tools for growing your business.',
+    features: [
+      'Accommodation included', 
+      'Basic 2 nights. 1 night optional',
+    ],
+  },
+  {
+    name: 'Meals',
+    id: 'tier-meals',
     href: '#',
     price: { dollor: '$15', won: '₩12' },
     description: 'Everything in Basic, plus essential tools for growing your business.',
@@ -310,8 +317,8 @@ const tiers = [
   //   ],
   // },
   {
-    name: 'Kids Package',
-    id: 'tier-essential',
+    name: 'Workshop',
+    id: 'tier-workshop',
     href: '#',
     price: { dollor: '$15', won: '₩12' },
     description: 'Everything in Basic, plus essential tools for growing your business.',
@@ -368,10 +375,10 @@ function Ticket() {
           Explicabo id ut laborum.
         </p> */}
         <div className="mt-20 flow-root">
-          <div className="isolate -mt-16 grid max-w-sm grid-cols-1 gap-y-16 divide-y divide-gray-100 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-2 lg:divide-x lg:divide-y-0 xl:-mx-4">
+          <div className="isolate -mt-16 grid max-w-sm grid-cols-2 gap-y-16 divide-y divide-gray-100 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-4 lg:divide-x lg:divide-y-0 xl:-mx-4">
             {tiers.map((tier) => (
-              <div key={tier.id} className="pt-16 lg:px-8 lg:pt-0 xl:px-14">
-                <h3 id={tier.id} className="text-3xl font-semibold leading-7 text-gray-900">
+              <div key={tier.id} className="pt-16 lg:px-2 lg:pt-0 xl:px-4">
+                <h3 id={tier.id} className="text-2xl font-semibold leading-7 text-gray-900">
                   {tier.name}
                 </h3>
                 <p className="mt-6 flex items-baseline gap-x-1">
@@ -380,13 +387,13 @@ function Ticket() {
                   {/* <span className="text-sm font-semibold leading-6 text-gray-600">/month</span> */}
                 </p>
                 {/* <p className="mt-3 text-sm leading-6 text-gray-500">{tier.price.won} per month if paid annually</p> */}
-                {/* <a
+                <a
                   href={tier.href}
                   aria-describedby={tier.id}
                   className="mt-10 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Buy ticket
-                </a> */}
+                </a>
                 <p className="mt-10 text-sm font-semibold leading-6 text-gray-900">{tier.description}</p>
                 <ul role="list" className="mt-6 space-y-3 text-sm leading-6 text-gray-600">
                   {tier.features.map((feature) => (
