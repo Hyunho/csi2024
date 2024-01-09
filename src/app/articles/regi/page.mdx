@@ -1,8 +1,10 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+import party from './party.png'
 
 export const article = {
-  author: 'Adam Wathan',
-  date: '2022-07-14',
+  author: 'campswingit',
+  date: '2024-01-09',
   title: 'CSI 2024 Ticket 공지',
   description:
     'When we released the first version of cosmOS last year, it was written in Go. Go is a wonderful programming language, but it’s been a while since I’ve seen an article on the front page of Hacker News about rewriting some important tool in Go and I see articles on there about rewriting things in Rust every single week.',
@@ -25,22 +27,10 @@ export default (props) => <ArticleLayout article={article} {...props} />
 CSI 2024 신청은 그동안 패키지로 묶어왔던 티켓 판매 방식을 벗어나, 다양한 선택지를 제공하고자 합니다. 물가인상 요인을 최대한 줄이고 참가자 분들의 취향과 상황에 맞춰 드리고자, 이번에는 파티, 숙소, 식사, 워크샵 등을 개별적으로 선택하실 수 있도록 분리하였습니다.  
 청심 수련원 부지에서 캠핑 이나 차박이 가능하거나 파티 후 근처 숙소나 귀가를 원하시는 분들, 또는 단체급식이 입에 안맞거나 다른 선택이 필요하신 분들에게는 이번 분리된 판매 방식이 더욱 합리적인 선택이 될 것입니다.
 
-```rust
-use ferris_says::say;
-use std::io::{stdout, BufWriter};
-
-fn main() {
-    let stdout = stdout();
-    let message = String::from("Hello fellow hackers");
-    let width = message.chars().count();
-
-    let mut writer = BufWriter::new(stdout.lock());
-    say(message.as_bytes(), width, &mut writer).unwrap();
-}
-```
 
 ## [필수] 파티
 
+<Image src={party} alt="" />
 
 ## [선택] 숙박
 
