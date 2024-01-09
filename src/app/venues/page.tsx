@@ -140,16 +140,16 @@ const features = [
 function Pictures() {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="max-w-3xl">
           <h2 id="features-heading" className="font-medium text-gray-500">
             Pictures
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simple productivity</p>
-          <p className="mt-4 text-gray-500">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">시설</p>
+          {/* <p className="mt-4 text-gray-500">
             Focus allows you to plan 10 daily tasks, while also thinking ahead about what's next. Forget distracting
             digital apps and embrace these small, sturdy pieces of paper.
-          </p>
+          </p> */}
         </div>
 
         <div className="mt-11 grid grid-cols-1 items-start gap-x-6 gap-y-16 sm:mt-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
@@ -175,8 +175,8 @@ export default function About() {
   return (
     <Container className="mt-20 sm:mt-32">
       <div>
-        <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          CheongShim International <br />Youth Centor
+        <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
+          CheongShim International Youth Centor
           <br />
           (청심국제청소년수련원)
         </h1>
