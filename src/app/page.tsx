@@ -613,13 +613,27 @@ export default async function Home() {
         </div>
       </Container>
       <Photos />
+      <Container className="mt-24 md:mt-28">
+        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
+          <div className="flex flex-col gap-12">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">News</h2>
+            {articles.map((article) => (
+              <Article key={article.slug} article={article} />
+            ))}
+          </div>
+          <div className="space-y-10 lg:pl-16 xl:pl-24">
+            {/* <Newsletter /> */}
+            <Resume />
+          </div>
+        </div>
+      </Container>
       <Container className="mt-9">
-        <Resume />
+        <hr/>
         <Instructors />
         <hr/>
         <Band />
         <hr/>
-        <Ticket />
+        {/* <Ticket /> */}
       </Container>
       {/* <Photos /> */}
       {/* <Container className="mt-9">
