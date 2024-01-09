@@ -442,8 +442,9 @@ function Newsletter() {
 }
 
 interface Role {
-  company: string
   title: string
+  place_en: string
+  place_kr: string
   // logo: ImageProps['src']
   start: string | { label: string; dateTime: string }
   end: string | { label: string; dateTime: string }
@@ -464,13 +465,14 @@ function Role({ role }: { role: Role }) {
         <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
       </div> */}
       <dl className="flex flex-auto flex-wrap gap-x-2">
-        <dt className="sr-only">Company</dt>
+        <dt className="sr-only">Title</dt>
         <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-          {role.company}
+          {role.title}
         </dd>
         <dt className="sr-only">Role</dt>
         <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-          {role.title}
+          {role.place_kr} <br/>
+          {role.place_en}
         </dd>
         <dt className="sr-only">Date</dt>
         <dd
@@ -505,14 +507,16 @@ function Resume() {
     //   end: '',
     // },
     {
-      company: 'KLHC',
-      title: 'TBD',
-      start: '30 Mar',
-      end: '',
+      title: 'KLHC',
+      place_en: 'At CheongShim International Youth Centor',
+      place_kr: '청심국제청소년수련원',
+      start: '5 Apr',
+      end: '7 Apr',
     },
     {
-      company: 'Camp Swing It',
-      title: 'At CheongShim International Youth Centor(청심국제청소년수련원)',
+      title: 'Camp Swing It',
+      place_en: 'At CheongShim International Youth Centor',
+      place_kr: '청심국제청소년수련원',
       start: '5 Apr',
       end: '7 Apr',
     },
