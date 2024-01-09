@@ -87,7 +87,7 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 function Article({ article }: { article: ArticleWithSlug }) {
   return (
     <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
+      <Card.Title href={`/news/${article.slug}`}>
         {article.title}
       </Card.Title>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
@@ -590,8 +590,8 @@ export default async function Home() {
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             {/* Camp Swing It description<br/> */}
             5-7 Apr<br/>
-            At CheongShim International Youth Centor<br/>
-            (청심국제청소년수련원)
+            At CheongShim International Youth Centor, Gapyong, Korea<br/>
+            (청심국제청소년수련원, 가평)
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
