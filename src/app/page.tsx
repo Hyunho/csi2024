@@ -16,11 +16,11 @@ import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
-import image1 from '@/images/photos/main_01.png'
-import image2 from '@/images/photos/main_02.png'
-import image3 from '@/images/photos/main_03.png'
-import image4 from '@/images/photos/main_04.png'
-import image5 from '@/images/photos/main_05.png'
+import image2 from '@/images/photos/main_01.png'
+import image3 from '@/images/photos/main_02.png'
+import image4 from '@/images/photos/main_03.png'
+import image5 from '@/images/photos/main_04.png'
+import image1 from '@/images/photos/main_05.png'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
@@ -170,7 +170,11 @@ function Instructors() {
     <div className="bg-white py-8 sm:py-12">
       <div className="mx-auto max-w-2xl lg:mx-0">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Dancers</h2>
-          The 2024 artists line up of Camp Swing It is as follows.
+         <p className="mt-6 text-lg leading-8 text-gray-600">
+          More Local Dancers will be announced. <br/>
+          (로컬 댄서 라인업이 추가로 업데이트 될 예정입니다.) 
+         </p>
+          {/* The 2024 artists line up of Camp Swing It is as follows. */}
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <ul
@@ -192,7 +196,25 @@ function Instructors() {
 
 const people = [
   {
-    name: 'Shirt Tail Stompers - Full Band',
+    name: ' Swing It Orchestra (20 Pieces Big Band)',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      '/images/2024/total_band.jpeg',
+    bio: 'London\'s top vintage band, the Shirt Tail Stompers are firmly established at home and internationally playing Harlem Swing and the Hot Jazz of the 1920s, 30s and 40s. Featuring music from composers such as Duke Ellington, Benny Goodman and Count Basie.',
+    twitterUrl: '#',
+    linkedinUrl: '#',
+  },
+  {
+    name: 'Brother Yusef',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      '/images/2024/band_02.png',
+    bio: 'Brother Yusef is a self-taught musician and has been described as a master solo guitarist and a uniquely passionate vocalist. His performances are raw, honest, and as real as the genre has ever aspired to be.',
+    twitterUrl: '#',
+    linkedinUrl: '#',
+  },
+  {
+    name: 'Shirt Tail Stompers Feat. Sara Oschlag',
     role: 'Co-Founder / CEO',
     imageUrl:
       '/images/2024/band_03.png',
@@ -209,23 +231,21 @@ const people = [
     twitterUrl: '#',
     linkedinUrl: '#',
   },
-  {
-    name: 'Brother Yusef',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      '/images/2024/band_02.png',
-    bio: 'Brother Yusef is a self-taught musician and has been described as a master solo guitarist and a uniquely passionate vocalist. His performances are raw, honest, and as real as the genre has ever aspired to be.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
+
   // More people...
 ]
 
 function Band() {
   return (
   <div className="bg-white py-8 md:py-12">
-      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Musicions</h2>
-      <div className="relative overflow-hidden pt-16">
+      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Musicians</h2>
+      <div>
+        <p className="mt-6 text-lg leading-8 text-gray-600">
+          Have you ever dreamed of dancing to a big band? If so, meet CSI's house band, Swing It Orchestra! <br/>
+          (빅 밴드 음악에 맞춰 스윙댄스를 추는 꿈을 꿔보신 적이 있으신가요? 그렇다면 CSI의 하우스밴드 스윙잇 오케스트라를 만나보세요!)
+      </p>
+      </div>
+      {/* <div className="relative overflow-hidden pt-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <img
             src="/images/2024/total_band.jpeg"
@@ -238,31 +258,30 @@ function Band() {
             <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
           </div>
         </div>
-      </div>
-      <div>
-        {/* <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Musicions</h2> */}
+      </div> */}
+      {/* <div>
         <p className="mt-6 text-lg leading-8 text-gray-600">
           Experience the ultimate jazz fusion with the Shirt Tail Stompers and Adamas kim and the Rhythm shufflers! A blend of Harlem Swing and early jazz for a night of exhilarating rhythms.
         </p>
         <p className="mt-6 text-lg leading-8 text-gray-600">
           Shirt Tail Stompers와 Adamas kim and the Rhythm shufflers와 함께하는 최고의 재즈 퓨전을 경험하세요! 할렘 스윙과 초기 재즈의 조화로 밤새도록 짜릿한 리듬을 즐길 수 있습니다.
         </p>
-      </div>
-   
+      </div> */}
+{/*    
       <div>
         <p>
         </p>
-      </div>
+      </div> */}
 
       <ul
           role="list"
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2"
         >
           {people.map((person) => (
             <li key={person.name}>
               <img className="aspect-[3/2] w-full rounded-2xl object-cover" src={person.imageUrl} alt="" />
               <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{person.name}</h3>
-              <p className="text-base leading-7 text-gray-600">{person.role}</p>
+              {/* <p className="text-base leading-7 text-gray-600">{person.role}</p> */}
             </li>
           ))}
         </ul>
@@ -589,8 +608,8 @@ export default async function Home() {
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             {/* Camp Swing It description<br/> */}
-            5-7 Apr<br/>
-            At CheongShim International Youth Centor, Gapyong, Korea<br/>
+            5-7 APR 2024<br/>
+            CheongShim International Youth Center, Gapyong, Korea<br/>
             (청심국제청소년수련원, 가평)
           </p>
           <div className="mt-6 flex gap-6">
@@ -618,10 +637,30 @@ export default async function Home() {
         </div>
       </Container>
       <Photos />
-      <Container className="mt-24 md:mt-28">
+      <Container className="mt-9">
+        <div className="bg-white py-8 md:py-12">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">ABOUT</h2>
+          <div>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              C.S.I. is an abbreviation for “Camp Swing It,” and is a swing camp that started in 2009 and is a swing dance camp that truly represents not only the Korean swing dance scene but also Asia. It is an all-round dance event that covers a wide range of swing dances, including Balboa, Boogie-Woogie, Blues, and Tap, with a focus on Lindy Hop.
+            </p>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              This event is created by everyone from dancers who have just started dancing to professional dancers who have distinguished themselves at various events.3 nights and 4 days of workshops by famous dancers, parties with live bands, and K.L.H.C. (Korean Lindy Hop Championships), the best Lindy Hop competition in the country. It can be said to be a “Festival Of Dancers.”
+            </p>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              (C.S.I. 는 “Camp Swing It”의 약자로서 2009년부터 시작된 스윙캠프로서 대한민국 스윙댄스씬 뿐만이 아니라 아시아를 대표하는 스윙댄스캠프이다. 린디합을 중심으로 발보아, 부기우기, 블루스, 탭 등 스윙댄스를 폭넓게 다루는 올라운드 댄스 행사이다.
+            </p>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              이제 막 춤을 시작한 댄서에서 부터 여러 행사에서 두각을 나타내고 있는 프로댄서들까지 하나가 되어 만들어가는 이 행사는, 3박4일간 국내외 챔피언들의 워크샵과 라이브 밴드와 함께하는 파티, 그리고 국내 최고의 린디합 대회인 K.L.H.C.(Korean Lindy Hop Championships)가 함께하는 “댄서들의 축제”라고 할 수 있다.)
+            </p>
+          </div>
+        </div>
+      </Container>
+      {/* <Container className="mt-24 md:mt-28"> */}
+      <Container className="mt-9">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-12">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">News</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">NOTICE</h2>
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
@@ -639,6 +678,14 @@ export default async function Home() {
         <Band />
         <hr/>
         {/* <Ticket /> */}
+        <div className="bg-white py-8 md:py-12">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">DJs</h2>
+          <div>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              TBD
+          </p>
+          </div>
+        </div>
       </Container>
       {/* <Photos /> */}
       {/* <Container className="mt-9">

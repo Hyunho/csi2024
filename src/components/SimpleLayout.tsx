@@ -3,10 +3,12 @@ import { Container } from '@/components/Container'
 export function SimpleLayout({
   title,
   intro,
+  intro_kr,
   children,
 }: {
   title: string
   intro: string
+  intro_kr?: string
   children?: React.ReactNode
 }) {
   return (
@@ -17,6 +19,9 @@ export function SimpleLayout({
         </h1>
         <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
           {intro}
+        </p>
+        <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          {intro_kr}
         </p>
       </header>
       {children && <div className="mt-16 sm:mt-20">{children}</div>}

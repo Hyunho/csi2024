@@ -134,11 +134,11 @@ function MobileNavigation(
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 {/* <MobileNavItem href="/">Workshop</MobileNavItem> */}
-                <MobileNavItem href="/">Home</MobileNavItem>
+                <MobileNavItem href="/">HOME</MobileNavItem>
                 <MobileNavItem href="/klhc">KLHC</MobileNavItem>
-                {/* <MobileNavItem href="/registration">Registration</MobileNavItem> */}
-                <MobileNavItem href="/schedule">Schedule</MobileNavItem>
-                <MobileNavItem href="/venues">Venues</MobileNavItem>
+                <MobileNavItem href="/schedule">SCHEDULE</MobileNavItem>
+                <MobileNavItem href="/venues">VENUES</MobileNavItem>
+                <MobileNavItem href="/registration">REGISTRATION</MobileNavItem>
               </ul>
             </nav>
           </Popover.Panel>
@@ -162,7 +162,7 @@ function NavItem({
       <Link
         href={href}
         className={clsx(
-          'relative block px-3 py-2 transition',
+          'relative block px-3 py-2 transition text-lg',
           isActive
             ? 'text-teal-500 dark:text-teal-400'
             : 'hover:text-teal-500 dark:hover:text-teal-400',
@@ -187,11 +187,11 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
         <NavItem href="/speaking">Speaking</NavItem>
         <NavItem href="/uses">Uses</NavItem> */}
         {/* <NavItem href="/">Workshop</NavItem> */}
-        <NavItem href="/">Home</NavItem>
+        <NavItem href="/">HOME</NavItem>
         <NavItem href="/klhc">KLHC</NavItem>
-        {/* <NavItem href="/registration">Registration</NavItem> */}
-        <NavItem href="/schedule">Schedule</NavItem>
-        <NavItem href="/venues">Venues</NavItem>
+        <NavItem href="/schedule">SCHEDULE</NavItem>
+        <NavItem href="/venues">VENUES</NavItem>
+        <NavItem href="/registration">REGISTRATION</NavItem>
       </ul>
     </nav>
   )
