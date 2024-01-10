@@ -241,7 +241,7 @@ function Band() {
       <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Musicians</h2>
       <div>
         <p className="mt-6 text-lg leading-8 text-gray-600">
-          Have you ever dreamed of dancing to a big band? If so, meet CSI's house band, Swing It Orchestra! <br/>
+          Have you ever dreamed of dancing to a big band? If so, meet CSI&apos;s house band, Swing It Orchestra! <br/>
           (빅 밴드 음악에 맞춰 스윙댄스를 추는 꿈을 꿔보신 적이 있으신가요? 그렇다면 CSI의 하우스밴드 스윙잇 오케스트라를 만나보세요!)
       </p>
       </div>
