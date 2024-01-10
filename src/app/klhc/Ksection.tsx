@@ -41,7 +41,7 @@ export const metadata = {
 
 export function Ksection() {
   return (
-      <div className="space-y-20">
+      <div className="space-y-20 not-prose">
         <ToolsSection title="Routine Divisions">
           <Tool title="Lindy Hop Couple">
             <p>
@@ -77,6 +77,7 @@ export function Ksection() {
             </ul>
           </Tool>
           <Tool title="Solo Jazz">
+            Solo Jazz 
           </Tool>
         </ToolsSection>
       </div>

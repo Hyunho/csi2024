@@ -657,8 +657,9 @@ export default async function Home() {
         </div>
       </Container>
       {/* <Container className="mt-24 md:mt-28"> */}
-      <Container className="mt-9">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
+      <Container>
+        <hr/>
+        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2 mt-9">
           <div className="flex flex-col gap-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">NOTICE</h2>
             {articles.map((article) => (

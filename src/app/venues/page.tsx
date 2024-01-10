@@ -48,11 +48,11 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-export const metadata: Metadata = {
-  title: 'About',
-  description:
-    'I’m Spencer Sharp. I live in New York City, where I design the future.',
-}
+// export const metadata: Metadata = {
+//   title: 'VENUES',
+  // description:
+  //   'I’m Spencer Sharp. I live in New York City, where I design the future.',
+// }
 
 /*
   This example requires some changes to your config:
@@ -70,71 +70,71 @@ export const metadata: Metadata = {
 */
 const features = [
   {
-    name: '효성문화홀',
+    name: 'Hyojeong Cultural Hall (효정문화홀)',
     description: 'Today, Next, and Someday cards allow you to defer your dreams into the future.',
     imageSrc: '/images/venues/culture_hall.jpeg',
     imageAlt: 'Green cardstock box containing white, beige, and brown cards.',
   },
   {
-    name: '오디토리움',
+    name: 'Auditorium (오디토리움)',
     description: 'Each refill pack contains plenty of cards to last you a month of procrastination.',
     imageSrc: '/images/venues/auditorium.jpeg',
     imageAlt: 'Green cardstock box open with 50 cards inside.',
   },
   {
-    name: '효정국제컨퍼런스홀',
+    name: 'Hyosjeong International Conference Hall (효정국제컨퍼런스홀)',
     description: 'Flip a card over to doodle during meetings when you should be listening.',
     imageSrc: '/images/venues/conference_hall1.jpeg',
     imageAlt: 'Detail of white today card, beige next card, and brown someday card with dot grid.',
   },
+  // {
+  //   name: '효정국제컨퍼런스홀',
+  //   description: 'Subscribe and save on routine refill packs to keep you productive all year long.',
+  //   imageSrc: '/images/venues/conference_hall2.jpeg',
+  //   imageAlt: 'Stack of three green cardstock boxes with 3 hole cutouts showing cards inside.',
+  // },
   {
-    name: '효정국제컨퍼런스홀',
-    description: 'Subscribe and save on routine refill packs to keep you productive all year long.',
-    imageSrc: '/images/venues/conference_hall2.jpeg',
-    imageAlt: 'Stack of three green cardstock boxes with 3 hole cutouts showing cards inside.',
-  },
-  {
-    name: '인포메이션 데스크',
+    name: 'Information Desk (인포메이션 데스크)',
     description: 'Subscribe and save on routine refill packs to keep you productive all year long.',
     imageSrc: '/images/venues/information.jpeg',
     imageAlt: 'Stack of three green cardstock boxes with 3 hole cutouts showing cards inside.',
   },
   {
-    name: '식당',
+    name: 'Cafeteria (식당)',
     description: 'Subscribe and save on routine refill packs to keep you productive all year long.',
     imageSrc: '/images/venues/restaurants.jpeg',
     imageAlt: 'Stack of three green cardstock boxes with 3 hole cutouts showing cards inside.',
   },
   {
-    name: '숙소동 전경',
+    name: 'Accommodation Building (숙소동)',
     description: 'Subscribe and save on routine refill packs to keep you productive all year long.',
     imageSrc: '/images/venues/lodging1.jpeg',
     imageAlt: 'Stack of three green cardstock boxes with 3 hole cutouts showing cards inside.',
   },
+  // {
+  //   name: '숙소동',
+  //   description: 'Subscribe and save on routine refill packs to keep you productive all year long.',
+  //   imageSrc: '/images/venues/lodging2.jpeg',
+  //   imageAlt: 'Stack of three green cardstock boxes with 3 hole cutouts showing cards inside.',
+  // },
   {
-    name: '숙소동',
-    description: 'Subscribe and save on routine refill packs to keep you productive all year long.',
-    imageSrc: '/images/venues/lodging2.jpeg',
-    imageAlt: 'Stack of three green cardstock boxes with 3 hole cutouts showing cards inside.',
-  },
-  {
-    name: '숙소동',
+    name: 'Accommodation (숙소)',
     description: 'Subscribe and save on routine refill packs to keep you productive all year long.',
     imageSrc: '/images/venues/lodging3.jpeg',
     imageAlt: 'Stack of three green cardstock boxes with 3 hole cutouts showing cards inside.',
   },
   {
-    name: '효정문화카페',
+    name: 'Hyojeong Cultural Cafe (효정문화카페)',
     description: 'Subscribe and save on routine refill packs to keep you productive all year long.',
     imageSrc: '/images/venues/cafe1.jpeg',
     imageAlt: 'Stack of three green cardstock boxes with 3 hole cutouts showing cards inside.',
   },
-  {
-    name: '효정문화카페',
-    description: 'Subscribe and save on routine refill packs to keep you productive all year long.',
-    imageSrc: '/images/venues/cafe2.jpeg',
-    imageAlt: 'Stack of three green cardstock boxes with 3 hole cutouts showing cards inside.',
-  },
+  // {
+  //   name: '효정문화카페',
+  //   description: 'Subscribe and save on routine refill packs to keep you productive all year long.',
+  //   imageSrc: '/images/venues/cafe2.jpeg',
+  //   imageAlt: 'Stack of three green cardstock boxes with 3 hole cutouts showing cards inside.',
+  // },
 ]
 
 function Pictures() {
@@ -142,10 +142,10 @@ function Pictures() {
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="max-w-3xl">
-          <h2 id="features-heading" className="font-medium text-gray-500">
-            Pictures
-          </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">시설</p>
+          {/* <h2 id="features-heading" className="font-medium text-gray-500">
+            PHOTO
+          </h2> */}
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">PHOTO</p>
           {/* <p className="mt-4 text-gray-500">
             Focus allows you to plan 10 daily tasks, while also thinking ahead about what's next. Forget distracting
             digital apps and embrace these small, sturdy pieces of paper.
@@ -171,14 +171,14 @@ function Pictures() {
 }
 
 
-export default function About() {
+export default function VENUES() {
   return (
     <Container className="mt-20 sm:mt-32">
       <div>
         <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
-          CheongShim International Youth Centor
+          CheongShim International Youth Center
           <br />
-          (청심국제청소년수련원)
+          (효정국제문화재단 청심국제청소년수련원)
         </h1>
       </div>
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
