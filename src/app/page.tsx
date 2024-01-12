@@ -87,7 +87,7 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 function Article({ article }: { article: ArticleWithSlug }) {
   return (
     <Card as="article">
-      <Card.Title href={`/news/${article.slug}`}>
+      <Card.Title href={`/articles/${article.slug}`}>
         {article.title}
       </Card.Title>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
@@ -223,7 +223,7 @@ const people = [
     linkedinUrl: '#',
   },
   {
-    name: 'Adamas kim and the Rhythm shufflers',
+    name: 'Adamas Kim And The Rhythm Shufflers',
     role: 'Co-Founder / CEO',
     imageUrl:
       '/images/2024/band_01.png',
