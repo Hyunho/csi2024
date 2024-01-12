@@ -179,7 +179,7 @@ function Instructors() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <ul
           role="list"
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none"
+          className="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-3 lg:mx-0 lg:max-w-none"
         >
           {instructor_people.map((person) => (
             <li key={person.name}>
@@ -280,7 +280,7 @@ function Band() {
           {people.map((person) => (
             <li key={person.name}>
               <div className='p-8'>
-                <img className="aspect-[2/2] rounded-2xl object-cover" src={person.imageUrl} alt="" />
+                <img className="aspect-[1/1] rounded-2xl object-cover" src={person.imageUrl} alt="" />
                 <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{person.name}</h3>
               </div>
               {/* <p className="text-base leading-7 text-gray-600">{person.role}</p> */}
@@ -290,6 +290,67 @@ function Band() {
     </div>
   )
 }
+
+const dj_people= [
+  {
+    name: 'DJ Juan',
+    // name: 'Peter Loggins & Katja Završnik',
+    role: 'Senior Designer',
+    imageUrl:
+      '/images/2024/dj1.png'
+      // 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+  },
+  {
+    name: 'DJ Philippe',
+    role: 'Senior Designer',
+    imageUrl:
+      '/images/2024/dj2.png'
+  },
+  {
+    name: 'DJ Major',
+    role: 'Senior Designer',
+    imageUrl:
+      '/images/2024/dj3.png'
+
+  },
+  {
+    // name: 'Coming soon',
+    name: 'HaeRim Kim',
+    role: 'Senior Designer',
+    imageUrl:
+      '/images/2024/dj4.png'
+  },
+]
+
+function DJs() {
+  return (
+    <div className="bg-white py-8 sm:py-12">
+      <div className="mx-auto max-w-2xl lg:mx-0">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">DJs</h2>
+         <p className="mt-6 text-lg leading-8 text-gray-600">
+          {/* More Local Dancers will be announced. <br/>
+          (로컬 댄서 라인업이 추가로 업데이트 될 예정입니다.)  */}
+         </p>
+          {/* The 2024 artists line up of Camp Swing It is as follows. */}
+      </div>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <ul
+          role="list"
+          className="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none"
+        >
+          {dj_people.map((person) => (
+            <li key={person.name}>
+              <img className="mx-auto h-42 w-42 rounded-xl " src={person.imageUrl} alt="" />
+              {/* <img className="mx-auto h-42 w-42 rounded-full" src={person.imageUrl} alt="" /> */}
+              <h3 className="mt-6 text-xl font-semibold Gleading-7 tracking-tight text-gray-900">{person.name}</h3>
+              {/* <p className="text-sm leading-6 text-gray-600">{person.description}</p> */}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+      )
+    }
 
 
 const tiers = [
@@ -681,14 +742,15 @@ export default async function Home() {
         <Band />
         <hr/>
         {/* <Ticket /> */}
-        <div className="bg-white py-8 md:py-12">
+        <DJs/>
+        {/* <div className="bg-white py-8 md:py-12">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">DJs</h2>
           <div>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               TBD
           </p>
           </div>
-        </div>
+        </div> */}
       </Container>
       {/* <Photos /> */}
       {/* <Container className="mt-9">
