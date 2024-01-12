@@ -1,10 +1,15 @@
-import Image from 'next/image'
-import schedule from './schedule_draft.png'
+import Image from 'next/legacy/image'
+import schedule from '@/images/schedule_draft.png'
 
 ## Schedule
 
 [Full Link](https://docs.google.com/spreadsheets/d/e/2PACX-1vSQHPPsmYE4vpBvbh8S10nWcq1D_vKuJn3wOmfiA-CRVnxk22np_QV8wWI7JOrZJ2S5KcN-YaE2mRkl/pubhtml?gid=1321866503&single=true)
-![schedule](/images/2024/schedule_draft.png)
+
+<Image
+  src={schedule}
+  alt="schedule"
+  className="absolute inset-0 h-full w-full object-cover"
+/>
 
 
 ## Kids Workshop
