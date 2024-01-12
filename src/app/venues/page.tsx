@@ -196,7 +196,9 @@ export default function VENUES() {
           <div className="mt-5 lg:pl-5">
             <div>
               <p>
-              경기도 가평군 설악면 미사리로 278-64 (경기도 가평군 설악면 송산리 595번지)
+                278-64, Misari-ro, Seorak-myeon, Gapyeong-gun, Gyeonggi-do, 12461, Republic of Korea
+                <br/>
+                경기도 가평군 설악면 미사리로 278-64 (경기도 가평군 설악면 송산리 595번지)
               </p>
             </div>
             <div className='mt-5'>
