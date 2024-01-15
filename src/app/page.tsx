@@ -293,12 +293,11 @@ function Band() {
 
 const dj_people= [
   {
-    name: 'DJ Juan',
-    // name: 'Peter Loggins & Katja Završnik',
+    // name: 'Coming soon',
+    name: 'DJ HaeRim',
     role: 'Senior Designer',
     imageUrl:
-      '/images/2024/dj1.png'
-      // 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      '/images/2024/dj4.png'
   },
   {
     name: 'DJ Philippe',
@@ -314,11 +313,12 @@ const dj_people= [
 
   },
   {
-    // name: 'Coming soon',
-    name: 'HaeRim Kim',
+    name: 'DJ Juan',
+    // name: 'Peter Loggins & Katja Završnik',
     role: 'Senior Designer',
     imageUrl:
-      '/images/2024/dj4.png'
+      '/images/2024/dj1.png'
+      // 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
   },
 ]
 
