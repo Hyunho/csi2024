@@ -5,7 +5,6 @@ import typographyStyles from './typography'
 
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: 'class',
   plugins: [typographyPlugin, require("tailwindcss-animate")],
   theme: {
     fontSize: {
