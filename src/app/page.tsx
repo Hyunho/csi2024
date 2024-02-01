@@ -705,10 +705,16 @@ export default async function Home() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">ABOUT</h2>
           <div>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              C.S.I. is an abbreviation for “Camp Swing It,” and is a swing camp that started in 2009 and is a swing dance camp that truly represents not only the Korean swing dance scene but also Asia. It is an all-round dance event that covers a wide range of swing dances, including Balboa, Boogie-Woogie, Blues, and Tap, with a focus on Lindy Hop.
+              C.S.I. is an abbreviation for “Camp Swing It”,
+              a Swing Camp started in 2009, 
+              and is a Swing Dance Camp that truly represents 
+              not only the Korean Swing Dance Scene,
+              but also the whole Asia. 
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              This event is created by everyone from dancers who have just started dancing to professional dancers who have distinguished themselves at various events.3 nights and 4 days of workshops by famous dancers, parties with live bands, and K.L.H.C. (Korean Lindy Hop Championships), the best Lindy Hop competition in the country. It can be said to be a “Festival Of Dancers.”
+              It is an all-round Dance Event that covers 
+              a wide range of swing dances; including Balboa,
+              Boogie-Woogie, Blues, and Tap, with a focus on Lindy Hop.
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               (C.S.I. 는 “Camp Swing It”의 약자로서 2009년부터 시작된 스윙캠프로서 대한민국 스윙댄스씬 뿐만이 아니라 아시아를 대표하는 스윙댄스캠프입니다. 그리고 린디합을 중심으로 발보아, 부기우기, 블루스, 탭 등 스윙댄스를 폭넓게 다루는 올라운드 댄스 행사를 추구합니다.
