@@ -549,17 +549,17 @@ function Role({ role }: { role: Role }) {
       </div> */}
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Title</dt>
-        <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+        <dd className="w-full flex-none text-sm font-medium text-zinc-900 ">
           {role.title}
         </dd>
         <dt className="sr-only">Role</dt>
-        <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+        <dd className="text-xs text-zinc-500 ">
           {role.place_kr} <br/>
           {role.place_en}
         </dd>
         <dt className="sr-only">Date</dt>
         <dd
-          className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
+          className="ml-auto text-xs text-zinc-400 "
           aria-label={`${startLabel} until ${endLabel}`}
         >
           <time dateTime={startDate}>{startLabel}</time>{' '}
@@ -613,8 +613,8 @@ function Resume() {
   ]
 
   return (
-    <div className="rounded-2xl mt-8 border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+    <div className="rounded-2xl mt-8 border border-zinc-100 p-6 ">
+      <h2 className="flex text-sm font-semibold text-zinc-900">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Brief schedule</span>
       </h2>
@@ -625,7 +625,7 @@ function Resume() {
       </ol>
       {/* <Button href="#" variant="secondary" className="group mt-6 w-full">
         Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600" />
       </Button> */}
     </div>
   )
@@ -641,7 +641,7 @@ function Photos() {
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl',
               rotations[imageIndex % rotations.length],
             )}
           >
@@ -665,11 +665,11 @@ export default async function Home() {
     <>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
             {/* Software designer, founder, and amateur astronaut. */}
             Camp Swing It 2024
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 text-base text-zinc-600 ">
             {/* Camp Swing It description<br/> */}
             5-7 APR 2024<br/>
             CheongShim International Youth Center, Gapyong, Korea<br/>
