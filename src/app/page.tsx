@@ -135,11 +135,16 @@ const instructor_people= [
 
   },
   {
-    // name: 'Coming soon',
+    name: 'Laia and Gustav',
     role: 'Senior Designer',
     imageUrl:
-      '/images/2024/dax&shadow.png'
-
+      '/images/2024/Gustav&Laia.png'
+  },
+  {
+    name: 'Sing Lim',
+    role: 'Senior Designer',
+    imageUrl:
+      '/images/2024/SingLim.png'
   },
   // {
   //   name: '덱스(확정) & 애니(미정)',
