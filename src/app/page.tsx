@@ -672,11 +672,11 @@ export default async function Home() {
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
             {/* Software designer, founder, and amateur astronaut. */}
-            Camp Swing It 2024
+            Camp Swing It 2025
           </h1>
           <p className="mt-6 text-base text-zinc-600 ">
             {/* Camp Swing It description<br/> */}
-            5-7 APR 2024<br/>
+            4-6 APR 2025<br/>
             CheongShim International Youth Center, Gapyong, Korea<br/>
             (청심국제청소년수련원, 가평)
           </p>
