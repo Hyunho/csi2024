@@ -680,6 +680,10 @@ export default async function Home() {
             CheongShim International Youth Center, Gapyong, Korea<br/>
             (청심국제청소년수련원, 가평)
           </p>
+          <p className="mt-6 text-base text-blue-600 ">
+            CSI 2025 will be updated soon.
+          </p>
+
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://www.facebook.com/CampSwingIt"
