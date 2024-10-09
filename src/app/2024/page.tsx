@@ -598,15 +598,15 @@ function Resume() {
       title: 'KLHC',
       place_en: 'At CheongShim International Youth Centor',
       place_kr: '청심국제청소년수련원',
-      start: '4 Apr 2025',
-      end: '6 Apr',
+      start: '5 Apr',
+      end: '7 Apr',
     },
     {
       title: 'Camp Swing It',
       place_en: 'At CheongShim International Youth Centor',
       place_kr: '청심국제청소년수련원',
-      start: '4 Apr 2025',
-      end: '6 Apr',
+      start: '5 Apr',
+      end: '7 Apr',
     },
     // {
     //   company: 'Starbucks',
@@ -672,18 +672,14 @@ export default async function Home() {
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">
             {/* Software designer, founder, and amateur astronaut. */}
-            Camp Swing It 2025
+            Camp Swing It 2024
           </h1>
           <p className="mt-6 text-base text-zinc-600 ">
             {/* Camp Swing It description<br/> */}
-            4-6 APR 2025<br/>
+            5-7 APR 2024<br/>
             CheongShim International Youth Center, Gapyong, Korea<br/>
             (청심국제청소년수련원, 가평)
           </p>
-          <p className="mt-6 text-base text-blue-600 ">
-            Thank you very much! CSI 2025 will be updated soon.
-          </p>
-
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://www.facebook.com/CampSwingIt"
@@ -752,25 +748,12 @@ export default async function Home() {
       </Container>
       <Container className="mt-9">
         <hr/>
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">INSTRUCTORS</h2>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          TBD
-        </p>
-        {/* <Instructors /> */}
+        <Instructors />
         <hr/>
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">BAND</h2>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          TBD
-        </p>
-        {/* <Band /> */}
+        <Band />
         <hr/>
         {/* <Ticket /> */}
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">DJs</h2>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          TBD
-        </p>
-        {/* <DJs/> */}
-
+        <DJs/>
         {/* <div className="bg-white py-8 md:py-12">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">DJs</h2>
           <div>
