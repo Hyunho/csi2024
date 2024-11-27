@@ -746,9 +746,11 @@ export default async function Home() {
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2 mt-9">
           <div className="flex flex-col gap-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">NOTICE</h2>
-            {articles.map((article) => (
+            {/* {articles.map((article) => (
               <Article key={article.slug} article={article} />
-            ))}
+            ))} */}
+            <Article key="csi2025-ticket-noti-kr" article={articles.find(article => article.slug === 'csi2025-ticket-noti-kr')!} />
+            <Article key="csi2025-ticket-noti-en" article={articles.find(article => article.slug === 'csi2025-ticket-noti-en')!} />
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             {/* <Newsletter /> */}
