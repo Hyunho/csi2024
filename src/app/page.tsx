@@ -245,10 +245,10 @@ function Band() {
   <div className="bg-white py-8 md:py-12">
       <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Musicians</h2>
       <div>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
+        {/* <p className="mt-6 text-lg leading-8 text-gray-600">
           Have you ever dreamed of dancing to a big band? If so, meet CSI&apos;s house band, Swing It Orchestra! <br/>
           (빅 밴드 음악에 맞춰 스윙댄스를 추는 꿈을 꿔보신 적이 있으신가요? 그렇다면 CSI의 하우스밴드 스윙잇 오케스트라를 만나보세요!)
-      </p>
+      </p> */}
       </div>
       {/* <div className="relative overflow-hidden pt-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -278,9 +278,11 @@ function Band() {
         </p>
       </div> */}
 
-      <ul
+
+          <Image className="aspect-[1/1] rounded-2xl object-cover mt-10"  src="/images/2024/total_band.jpeg" alt="CSI 2025 Silhouette" width={500} height={500} />
+      {/* <ul
           role="list"
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+          className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2"
         >
           {people.map((person) => (
             <li key={person.name}>
@@ -288,10 +290,9 @@ function Band() {
                 <img className="aspect-[1/1] rounded-2xl object-cover" src={person.imageUrl} alt="" />
                 <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{person.name}</h3>
               </div>
-              {/* <p className="text-base leading-7 text-gray-600">{person.role}</p> */}
             </li>
           ))}
-        </ul>
+        </ul> */}
     </div>
   )
 }
@@ -681,7 +682,12 @@ export default async function Home() {
             (청심국제청소년수련원, 가평)
           </p>
           <p className="mt-6 text-base text-blue-600 ">
-            Thank you very much! CSI 2025 will be updated soon.
+            CSI 2025 Blind Ticket registration will be open from 10 DEC(TUE) to 12 DEC(THU) 2024
+            Teachers and Band line up will be open after.<br/>
+            {/* </p>
+            <p className="mt-6 text-base text-blue-600 "> */}
+            (CSI 2025 블라인드 티켓 판매가 12월 10일(화)~ 12일(목)에 열립니다. 
+            강사와 밴드 라인업 등의 세부 정보는 이후에 오픈 됩니다.)
           </p>
 
           <div className="mt-6 flex gap-6">
@@ -740,9 +746,11 @@ export default async function Home() {
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2 mt-9">
           <div className="flex flex-col gap-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">NOTICE</h2>
-            {articles.map((article) => (
+            {/* {articles.map((article) => (
               <Article key={article.slug} article={article} />
-            ))}
+            ))} */}
+            <Article key="csi2025-ticket-noti-kr" article={articles.find(article => article.slug === 'csi2025-ticket-noti-kr')!} />
+            <Article key="csi2025-ticket-noti-en" article={articles.find(article => article.slug === 'csi2025-ticket-noti-en')!} />
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             {/* <Newsletter /> */}
@@ -752,17 +760,21 @@ export default async function Home() {
       </Container>
       <Container className="mt-9">
         <hr/>
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">INSTRUCTORS</h2>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Dancers</h2>
         <p className="mt-6 text-lg leading-8 text-gray-600">
-          TBD
+          {/* <img className="mx-auto h-42 w-42 rounded-full" src="/images/2025/csi2025_silhouette.png" alt="Dancer 1" /> */}
         </p>
+        <div className="mx-auto ">
+          <Image className="aspect-[1/1] rounded-2xl object-cover"  src="/images/2025/csi2025_silhouette.png" alt="CSI 2025 Silhouette" width={500} height={500} />
+        </div>
         {/* <Instructors /> */}
-        <hr/>
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">BAND</h2>
+        <hr className="mt-9"/>
+
+        {/* <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">BAND</h2>
         <p className="mt-6 text-lg leading-8 text-gray-600">
           TBD
-        </p>
-        {/* <Band /> */}
+        </p> */}
+        <Band />
         <hr/>
         {/* <Ticket /> */}
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">DJs</h2>
