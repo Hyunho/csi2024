@@ -684,8 +684,8 @@ export default async function Home() {
           <p className="mt-6 text-base text-blue-600 ">
             CSI 2025 Blind Ticket registration will be open from 10 DEC(TUE) to 12 DEC(THU) 2024
             Teachers and Band line up will be open after.<br/>
-            {/* </p>
-            <p className="mt-6 text-base text-blue-600 "> */}
+          </p>
+          <p className="mt-2 text-base text-blue-600 ">
             (CSI 2025 블라인드 티켓 판매가 12월 10일(화)~ 12일(목)에 열립니다. 
             강사와 밴드 라인업 등의 세부 정보는 이후에 오픈 됩니다.)
           </p>
