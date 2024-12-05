@@ -28,6 +28,7 @@ async function importArticle(
 export async function getAllArticles() {
   let articleFilenames = await glob('*/page.mdx', {
     cwd: './src/app/articles',
+    ignore: ['csi2024*/page.mdx']
   })
 
   let articles = await Promise.all(articleFilenames.map(importArticle))
