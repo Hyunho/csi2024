@@ -20,12 +20,6 @@ export function KlhcTable() {
             <td>Lindy Hop Couple</td>
           </tr>
           <tr>
-            <td>Balboa</td>
-            <td>Balboa M&M Open</td>
-            <td>Balboa M&M Amateur</td>
-            <td>Balboa M&M Rookie</td>
-          </tr>
-          <tr>
             <td>Improvisation</td>
             <td>Strictly Open</td>
             <td>M&M Open</td>
@@ -42,6 +36,12 @@ export function KlhcTable() {
             <td>Strictly All-Star</td>
             <td>M&M All-star</td>
             <td></td>
+          </tr>
+          <tr>
+            <td>Balboa</td>
+            <td>Balboa M&M Open</td>
+            <td>Balboa M&M Amateur</td>
+            <td>Balboa M&M Rookie</td>
           </tr>
           <tr>
             <td>Awards</td>
