@@ -7,9 +7,9 @@ export function KlhcTable() {
         <thead>
           <tr>
             <th>Divisions</th>
-            <th>APR 4 (THU)</th>
-            <th>APR 5 (FRI)</th>
-            <th>APR 6 (SAT)</th>
+            <th>APR 4 (FRI)</th>
+            <th>APR 5 (SAT)</th>
+            <th>APR 6 (SUN)</th>
           </tr>
         </thead>
         <tbody>
