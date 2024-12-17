@@ -114,38 +114,45 @@ function SocialLink({
 
 const instructor_people= [
   {
-    name: 'Katja and Peter',
+    name: 'Nick & Kate',
     // name: 'Peter Loggins & Katja Završnik',
     role: 'Senior Designer',
-    imageUrl:
-      '/images/2024/Peter&Katja.png'
-      // 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    // imageUrl:
+    //   '/images/2024/Peter&Katja.png',
+    videoUrl: '/videos/2025/Nick&Kate.mp4',
+    alt: 'Nick & Kate'
   },
   {
-    name: 'Hanna and Mattias',
+    name: 'Peter & Naomi',
     role: 'Senior Designer',
-    imageUrl:
-      '/images/2024/Hanna&Mattias.png'
+    // imageUrl:
+    //   '/images/2024/Hanna&Mattias.png',
+    videoUrl: '/videos/2025/Peter&Naomi.mp4',
+    alt: 'Peter & Naomi'
   },
   {
-    name: 'Sharon and Juan',
+    name: 'Mattias & Hanna',
     role: 'Senior Designer',
-    imageUrl:
-      '/images/2024/Sharon&Juan.png'
+    // imageUrl:
+    //   '/images/2024/Sharon&Juan.png',
+    videoUrl: '/videos/2025/Mattias&Hanna.mp4',
+    alt: 'Mattias & Hanna'
 
   },
   {
-    name: 'Laia and Gustav',
+    name: 'Juan & Sharon',
     role: 'Senior Designer',
-    imageUrl:
-      '/images/2024/Gustav&Laia.png'
+    // imageUrl:
+    //   '/images/2024/Gustav&Laia.png',
+    videoUrl: '/videos/2025/Juan&Sharon.mp4',
+    alt: 'Juan & Sharon'
   },
-  {
-    name: 'Sing Lim',
-    role: 'Senior Designer',
-    imageUrl:
-      '/images/2024/SingLim.png'
-  },
+  // {
+  //   name: 'Sing Lim',
+  //   role: 'Senior Designer',
+  //   imageUrl:
+  //     '/images/2024/SingLim.png'
+  // },
   // {
   //   name: '덱스(확정) & 애니(미정)',
   //   role: 'Senior Designer',
@@ -175,10 +182,10 @@ function Instructors() {
     <div className="bg-white py-8 sm:py-12">
       <div className="mx-auto max-w-2xl lg:mx-0">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Dancers</h2>
-         <p className="mt-6 text-lg leading-8 text-gray-600">
+         {/* <p className="mt-6 text-lg leading-8 text-gray-600">
           More Local Dancers will be announced. <br/>
           (로컬 댄서 라인업이 추가로 업데이트 될 예정입니다.) 
-         </p>
+         </p> */}
           {/* The 2024 artists line up of Camp Swing It is as follows. */}
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -188,7 +195,12 @@ function Instructors() {
         >
           {instructor_people.map((person) => (
             <li key={person.name}>
-              <img className="mx-auto h-42 w-42 rounded-full" src={person.imageUrl} alt="" />
+              {/* <img className="mx-auto h-42 w-42 rounded-full" src={person.imageUrl} alt="" /> */}
+              {/* <video className="mx-auto h-42 w-42 rounded-full" src={person.videoUrl} alt={person.alt} /> */}
+              <video width="600" autoPlay loop muted>
+                <source src={person.videoUrl} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
               <h3 className="mt-6 text-xl font-semibold Gleading-7 tracking-tight text-gray-900">{person.name}</h3>
               {/* <p className="text-sm leading-6 text-gray-600">{person.description}</p> */}
             </li>
@@ -201,28 +213,28 @@ function Instructors() {
 
 const people = [
   {
-    name: ' Swing It Orchestra (20 Pieces Big Band)',
+    name: 'Steven Coombe Project Band',
     role: 'Co-Founder / CEO',
     imageUrl:
-      '/images/2024/total_band.jpeg',
+      '/images/2025/band_steven.png',
     bio: 'London\'s top vintage band, the Shirt Tail Stompers are firmly established at home and internationally playing Harlem Swing and the Hot Jazz of the 1920s, 30s and 40s. Featuring music from composers such as Duke Ellington, Benny Goodman and Count Basie.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
-    name: 'Brother Yusef',
+    name: 'Naomi And Her Handsome Devils',
     role: 'Co-Founder / CEO',
     imageUrl:
-      '/images/2024/band_02.png',
+      '/images/2025/band_naomi.png',
     bio: 'Brother Yusef is a self-taught musician and has been described as a master solo guitarist and a uniquely passionate vocalist. His performances are raw, honest, and as real as the genre has ever aspired to be.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
-    name: 'Shirt Tail Stompers Feat. Sara Oschlag',
+    name: 'Swing It Orchestra (Big Band)',
     role: 'Co-Founder / CEO',
     imageUrl:
-      '/images/2024/band_03.png',
+      '/images/2025/band_swingit.png',
     bio: 'London\'s top vintage band, the Shirt Tail Stompers are firmly established at home and internationally playing Harlem Swing and the Hot Jazz of the 1920s, 30s and 40s. Featuring music from composers such as Duke Ellington, Benny Goodman and Count Basie.',
     twitterUrl: '#',
     linkedinUrl: '#',
@@ -231,7 +243,16 @@ const people = [
     name: 'Adamas Kim And The Rhythm Shufflers',
     role: 'Co-Founder / CEO',
     imageUrl:
-      '/images/2024/band_01.png',
+      '/images/2025/band_adamas.png',
+    bio: 'This is a band specializing in vintage dance music like early jazz, swing, and boogie-woogie, known for their 9-10 member lineup. They focus on enjoying dance and music together, gaining fame in the swing dance scene since their 2019 debut, and work to popularize vintage jazz culture.',
+    twitterUrl: '#',
+    linkedinUrl: '#',
+  },
+  {
+    name: 'Brother Yusef (Waiting for confirmation)',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      '/images/2025/band_yusef.png',
     bio: 'This is a band specializing in vintage dance music like early jazz, swing, and boogie-woogie, known for their 9-10 member lineup. They focus on enjoying dance and music together, gaining fame in the swing dance scene since their 2019 debut, and work to popularize vintage jazz culture.',
     twitterUrl: '#',
     linkedinUrl: '#',
@@ -279,10 +300,10 @@ function Band() {
       </div> */}
 
 
-          <Image className="aspect-[1/1] rounded-2xl object-cover mt-10"  src="/images/2024/total_band.jpeg" alt="CSI 2025 Silhouette" width={500} height={500} />
-      {/* <ul
+          {/* <Image className="aspect-[1/1] rounded-2xl object-cover mt-10"  src="/images/2024/total_band.jpeg" alt="CSI 2025 Silhouette" width={500} height={500} /> */}
+      <ul
           role="list"
-          className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+          className="mx-auto mt-10 grid max-w-2xl grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:mx-0 lg:max-w-none lg:grid-cols-3"
         >
           {people.map((person) => (
             <li key={person.name}>
@@ -292,7 +313,7 @@ function Band() {
               </div>
             </li>
           ))}
-        </ul> */}
+        </ul>
     </div>
   )
 }
@@ -760,14 +781,7 @@ export default async function Home() {
       </Container>
       <Container className="mt-9">
         <hr/>
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Dancers</h2>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          {/* <img className="mx-auto h-42 w-42 rounded-full" src="/images/2025/csi2025_silhouette.png" alt="Dancer 1" /> */}
-        </p>
-        <div className="mx-auto ">
-          <Image className="aspect-[1/1] rounded-2xl object-cover"  src="/images/2025/csi2025_silhouette.png" alt="CSI 2025 Silhouette" width={500} height={500} />
-        </div>
-        {/* <Instructors /> */}
+        <Instructors />
         <hr className="mt-9"/>
 
         {/* <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">BAND</h2>
