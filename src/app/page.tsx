@@ -213,7 +213,7 @@ function Instructors() {
 
 const people = [
   {
-    name: 'Steven Coombe Project Band',
+    name: 'Project Band feat. Steven Coombe.',
     role: 'Co-Founder / CEO',
     imageUrl:
       '/images/2025/band_steven.png',
@@ -227,15 +227,6 @@ const people = [
     imageUrl:
       '/images/2025/band_naomi.png',
     bio: 'Brother Yusef is a self-taught musician and has been described as a master solo guitarist and a uniquely passionate vocalist. His performances are raw, honest, and as real as the genre has ever aspired to be.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Swing It Orchestra (Big Band)',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      '/images/2025/band_swingit.png',
-    bio: 'London\'s top vintage band, the Shirt Tail Stompers are firmly established at home and internationally playing Harlem Swing and the Hot Jazz of the 1920s, 30s and 40s. Featuring music from composers such as Duke Ellington, Benny Goodman and Count Basie.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -254,6 +245,15 @@ const people = [
     imageUrl:
       '/images/2025/band_yusef.png',
     bio: 'This is a band specializing in vintage dance music like early jazz, swing, and boogie-woogie, known for their 9-10 member lineup. They focus on enjoying dance and music together, gaining fame in the swing dance scene since their 2019 debut, and work to popularize vintage jazz culture.',
+    twitterUrl: '#',
+    linkedinUrl: '#',
+  },
+  {
+    name: 'Swing It Orchestra (Big Band)',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      '/images/2025/band_swingit.png',
+    bio: 'London\'s top vintage band, the Shirt Tail Stompers are firmly established at home and internationally playing Harlem Swing and the Hot Jazz of the 1920s, 30s and 40s. Featuring music from composers such as Duke Ellington, Benny Goodman and Count Basie.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -319,26 +319,25 @@ function Band() {
 }
 
 const dj_people= [
-  {
-    // name: 'Coming soon',
-    name: 'DJ HaeRim',
-    role: 'Senior Designer',
-    imageUrl:
-      '/images/2024/dj4.png'
-  },
+  // {
+  //   name: 'DJ HaeRim',
+  //   role: 'Senior Designer',
+  //   imageUrl:
+  //     '/images/2024/dj4.png'
+  // },
   {
     name: 'DJ Philippe',
     role: 'Senior Designer',
     imageUrl:
       '/images/2024/dj2.png'
   },
-  {
-    name: 'DJ Major',
-    role: 'Senior Designer',
-    imageUrl:
-      '/images/2024/dj3.png'
+  // {
+  //   name: 'DJ Major',
+  //   role: 'Senior Designer',
+  //   imageUrl:
+  //     '/images/2024/dj3.png'
 
-  },
+  // },
   {
     name: 'DJ Juan',
     // name: 'Peter Loggins & Katja Završnik',
@@ -791,11 +790,7 @@ export default async function Home() {
         <Band />
         <hr/>
         {/* <Ticket /> */}
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">DJs</h2>
-        <p className="mt-6 text-lg leading-8 text-gray-600">
-          TBD
-        </p>
-        {/* <DJs/> */}
+        <DJs/>
 
         {/* <div className="bg-white py-8 md:py-12">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">DJs</h2>
