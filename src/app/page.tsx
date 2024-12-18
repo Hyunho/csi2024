@@ -213,10 +213,10 @@ function Instructors() {
 
 const people = [
   {
-    name: 'Project Band feat. Steven Coombe.',
+    name: 'Swing It Orchestra (Big Band)',
     role: 'Co-Founder / CEO',
     imageUrl:
-      '/images/2025/band_steven.png',
+      '/images/2025/band_swingit.png',
     bio: 'London\'s top vintage band, the Shirt Tail Stompers are firmly established at home and internationally playing Harlem Swing and the Hot Jazz of the 1920s, 30s and 40s. Featuring music from composers such as Duke Ellington, Benny Goodman and Count Basie.',
     twitterUrl: '#',
     linkedinUrl: '#',
@@ -249,10 +249,10 @@ const people = [
     linkedinUrl: '#',
   },
   {
-    name: 'Swing It Orchestra (Big Band)',
+    name: 'Project Band feat. Steven Coombe.',
     role: 'Co-Founder / CEO',
     imageUrl:
-      '/images/2025/band_swingit.png',
+      '/images/2025/band_steven.png',
     bio: 'London\'s top vintage band, the Shirt Tail Stompers are firmly established at home and internationally playing Harlem Swing and the Hot Jazz of the 1920s, 30s and 40s. Featuring music from composers such as Duke Ellington, Benny Goodman and Count Basie.',
     twitterUrl: '#',
     linkedinUrl: '#',
