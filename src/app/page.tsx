@@ -702,12 +702,10 @@ export default async function Home() {
             (청심국제청소년수련원, 가평)
           </p>
           <p className="mt-6 text-base text-blue-600 ">
-            CSI 2025 Blind Ticket registration will be open from 10 DEC(TUE) to 12 DEC(THU) 2024 Teachers and Band line up will be open after. The KLHC registration also will be opened from the 1st registration.<br/>
+            CSI 2025 1st Ticket registration will be open from 18 DEC to 15 JAN 2025.<br/>
           </p>
           <p className="mt-2 text-base text-blue-600 ">
-            (CSI 2025 블라인드 티켓 판매가 12월 10일(화)~ 12일(목)에 열립니다.
-            강사와 밴드 라인업 등의 세부 정보는 이후에 오픈 됩니다.
-            또한 KLHC 대회 신청은 티켓 구매자 분들을 대상으로 1차 신청 이후로 열리게됩니다.)
+            (CSI 2025 1차 티켓 판매가 12월 18일 ~  2025년 1월 15일에 열립니다.)
           </p>
 
           <div className="mt-6 flex gap-6">
