@@ -719,7 +719,7 @@ function Album() {
       <div>
         <p className="mt-6 text-lg leading-8 text-gray-600">
           <li>
-            <a href="https://vvd.bz/gmO0" className="text-teal-500 hover:text-blue-700" target="_blank" rel="noopener noreferrer">Go to CSI 2024 Album</a>
+            <a href="https://vvd.bz/gmO0" className="text-teal-500 hover:text-blue-700" target="_blank" rel="noopener noreferrer">Go to the CSI 2024 Album</a>
           </li>
         </p>
       </div>
