@@ -262,7 +262,7 @@ const people = [
     linkedinUrl: '#',
   },
   {
-    name: 'Brother Yusef (Waiting for confirmation)',
+    name: 'Brother Yusef',
     role: 'Co-Founder / CEO',
     imageUrl:
       '/images/2025/band_yusef.png',
@@ -738,12 +738,12 @@ export default async function Home() {
             CheongShim International Youth Center, Gapyong, Korea<br/>
             (청심국제청소년수련원, 가평)
           </p>
-          <p className="mt-6 text-base text-blue-600 ">
+          {/* <p className="mt-6 text-base text-blue-600 ">
             CSI 2025 1st Ticket registration will be open from 18 DEC to 15 JAN 2025.<br/>
           </p>
           <p className="mt-2 text-base text-blue-600 ">
             (CSI 2025 1차 티켓 판매가 12월 18일 ~  2025년 1월 15일에 열립니다.)
-          </p>
+          </p> */}
 
           <div className="mt-6 flex gap-6">
             <SocialLink
