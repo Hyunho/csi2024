@@ -782,8 +782,8 @@ export default async function Home() {
             {/* {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))} */}
-            <Article key="csi2025-ticket-noti-kr" article={articles.find(article => article.slug === 'csi2025-ticket-noti-kr')!} />
-            <Article key="csi2025-ticket-noti-en" article={articles.find(article => article.slug === 'csi2025-ticket-noti-en')!} />
+            {/* <Article key="csi2025-ticket-noti-kr" article={articles.find(article => article.slug === 'csi2025-ticket-noti-kr')!} />
+            <Article key="csi2025-ticket-noti-en" article={articles.find(article => article.slug === 'csi2025-ticket-noti-en')!} /> */}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             {/* <Newsletter /> */}
